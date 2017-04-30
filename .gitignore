@@ -5,3 +5,4 @@ coverage
 *.css
 themes
 /*.js
+!.eslintrc.js
