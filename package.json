@@ -38,6 +38,8 @@
   "homepage": "https://github.com/Barry127/BarryUI#readme",
   "dependencies": {
     "classnames": "^2.2.5",
+    "cuid": "^1.3.8",
+    "lodash": "^4.17.4",
     "prop-types": "^15.5.8",
     "react-helper-pack": "^0.2.1"
   },
@@ -49,6 +51,7 @@
     "babel-plugin-transform-react-jsx": "^6.24.1",
     "babel-preset-es2015": "^6.24.1",
     "chai": "^3.5.0",
+    "cheerio": "^0.22.0",
     "enzyme": "^2.8.2",
     "eslint": "^3.19.0",
     "eslint-config-react-app": "^0.6.2",

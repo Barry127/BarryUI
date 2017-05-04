@@ -1,6 +1,7 @@
 module.exports = {
   "extends": ["react-app", "xo-space/esnext", "xo-react"],
   "rules": {
+    "capitalized-comments": 0,
     "object-curly-spacing": [
       2,
       "always"
