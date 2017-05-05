@@ -4,5 +4,6 @@ npm-debug.log
 coverage
 *.css
 themes
+!src/themes
 /*.js
 !.eslintrc.js

@@ -1,0 +1,99 @@
+/* Theme colors */
+$themeDarker:         #004578;
+$themeDark:           #005a9e;
+$themeDarkAlt:        #106ebe;
+$themePrimary:        #0078d7;
+$themeSecondary:      #2488d8;
+$themeTertiary:       #69afe5;
+$themeLight:          #b3d6f2;
+$themeLighter:        #deecf9;
+$themeLigterAlt:      #eff6fc;
+
+/* Neutral colors */
+$black:               #000;
+$neutralDark:         #212121;
+$neutralPrimary:      #333;
+$neutralPrimaryAlt:   #3c3c3c;
+$neutralSecondary:    #666;
+$neutralTertiary:     #a6a6a6;
+$neutralTertiaryAlt:  #c8c8c8;
+$neutralLight:        #eaeaea;
+$neutralLighter:      #f4f4f4;
+$neutralLighterAlt:   #f8f8f8;
+$white:               #fff;
+
+$redDark:       #a80000;
+$red:           #e81123;
+$orange:        #d83b01;
+$orangeLight:   #ea4300;
+$orangeLighter: #ff8c00;
+$yellow:        #ffb900;
+$yellowLight:   #fff100;
+$greenDark:     #004b1c;
+$green:         #107c10;
+$greenLight:    #bad80a;
+$blueDark:      #002050;
+$blueMid:       #00188f;
+$blue:          $themePrimary;
+$blueLight:     #00bcf2;
+$tealDark:      #004b50;
+$teal:          #008272;
+$tealLight:     #00b294;
+$magentaDark:   #5c005c;
+$magenta:       #b4009e;
+$magentaLight:  #e3008c;
+$purpleDark:    #32145a;
+$purple:        #5c2d91;
+$purpleLight:   #b4a0ff;
+
+$link-text-color:       $blue;
+$link-hover-text-color: $themeDarker;
+
+$default-button-background:         $neutralLighter;
+$default-button-background-active:  $themePrimary;
+$default-button-background-hover:   $neutralLight;
+$default-button-text-color:         $neutralPrimary;
+$default-button-text-color-active:  $white;
+$default-button-text-color-hover:   $neutralPrimary;
+
+$primary-button-background:         $themePrimary;
+$primary-button-background-active:  $themePrimary;
+$primary-button-background-hover:   $themeDark;
+$primary-button-text-color:         $white;
+$primary-button-text-color-active:  $white;
+$primary-button-text-color-hover:   $white;
+
+$secondary-button-background:         $neutralPrimary;
+$secondary-button-background-active:  $neutralPrimary;
+$secondary-button-background-hover:   $neutralDark;
+$secondary-button-text-color:         $white;
+$secondary-button-text-color-active:  $white;
+$secondary-button-text-color-hover:   $white;
+
+$success-button-background:         $green;
+$success-button-background-active:  $green;
+$success-button-background-hover:   $greenDark;
+$success-button-text-color:         $white;
+$success-button-text-color-active:  $white;
+$success-button-text-color-hover:   $white;
+
+$warning-button-background:         $yellow;
+$warning-button-background-active:  $yellow;
+$warning-button-background-hover:   $orangeLighter;
+$warning-button-text-color:         $white;
+$warning-button-text-color-active:  $white;
+$warning-button-text-color-hover:   $white;
+
+$danger-button-background:         $red;
+$danger-button-background-active:  $red;
+$danger-button-background-hover:   $redDark;
+$danger-button-text-color:         $white;
+$danger-button-text-color-active:  $white;
+$danger-button-text-color-hover:   $white;
+
+$info-button-background:         $teal;
+$info-button-background-active:  $teal;
+$info-button-background-hover:   $tealDark;
+$info-button-text-color:         $white;
+$info-button-text-color-active:  $white;
+$info-button-text-color-hover:   $white;

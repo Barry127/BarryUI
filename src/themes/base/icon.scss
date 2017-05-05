@@ -1,0 +1,86 @@
+@import './config/animations';
+@import 'config/colors';
+@import 'config/layout';
+@import 'config/mixins';
+
+.buiIcon {
+  text-align: center;
+  vertical-align: baseline;
+}
+
+.buiIcon--disabled {
+  @include disabled;
+}
+
+.buiIcon--primary {
+  color: $primary-text-color;
+}
+
+.buiIcon--state-success {
+  color: $success-text-color;
+}
+
+.buiIcon--state-warning {
+  color: $warning-text-color;
+}
+
+.buiIcon--state-danger {
+  color: $danger-text-color;
+}
+
+.buiIcon--state-info {
+  color: $info-text-color;
+}
+
+.buiIcon--size-small {
+  vertical-align: middle;
+  @include size(map-get($sizes-em, 'small'));
+}
+
+.buiIcon--size-medium {
+  vertical-align: middle;
+  @include size(map-get($sizes-em, 'medium'));
+}
+
+.buiIcon--size-large {
+  vertical-align: middle;
+  @include size(map-get($sizes-em, 'large'));
+}
+
+.buiIcon--size-2x {
+  vertical-align: middle;
+  @include size(2em);
+}
+
+.buiIcon--size-3x {
+  vertical-align: middle;
+  @include size(3em);
+}
+
+.buiIcon--size-4x {
+  vertical-align: middle;
+  @include size(4em);
+}
+
+.buiIcon--size-5x {
+  vertical-align: middle;
+  @include size(5em);
+}
+
+.buiIcon__icon {
+  display: inline-block;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: normal;
+  line-height: inherit;
+  font-family: fontAwesome;
+  font-size: inherit;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.buiIcon__icon--spin {
+  transform-origin: center center;
+  animation: bui-spin 2s infinite linear;
+}

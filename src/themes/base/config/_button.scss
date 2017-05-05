@@ -1,0 +1,70 @@
+@import 'layout';
+
+$btn-border-radius: $border-radius;
+$btn-line-height: $line-height;
+$btn-padding-x: $padding-x;
+$btn-padding-y: $padding-y;
+$btn-padding: $padding;
+$btn-sizes: $sizes-rem;
+$btn-transition: all .15s ease-in-out;
+
+@mixin btn-size ($size) {
+  font-size: map-get($btn-sizes, $size);
+  border-radius: map-get($btn-border-radius, $size);
+  padding: map-get($btn-padding, $size);
+
+  &.buiButton--circular {
+    padding-left: map-get($btn-padding-y, $size);
+    padding-right: map-get($btn-padding-y, $size);
+    min-width: 4 * map-get($btn-padding-y, $size);
+  }
+}
+
+@mixin btn-style ($color, $background, $border) {
+  $active-background: darken($background, 10%);
+  $active-border: darken($border, 12%);
+
+  color: $color;
+  background: $background;
+  border-color: $border;
+
+  &:hover {
+    color: $color;
+    background: $active-background;
+    border-color: $active-border;
+  }
+
+  &:focus {
+    box-shadow: 0 0 0 2px rgba($border, .5);
+  }
+
+  &:active,
+  &.buiButton--active {
+    color: $color;
+    background: $active-background;
+    border-color: $active-border;
+  }
+}
+
+@mixin btn-basic ($color, $hover-color) {
+  color: $color;
+  background: transparent;
+  border-color: $color;
+
+  &:hover {
+    color: $hover-color;
+    background: $color;
+    border-color: $color;
+  }
+
+  &:focus {
+    box-shadow: 0 0 0 2px rgba($color, .5);
+  }
+
+  &:active,
+  &.buiButton--active {
+    color: $hover-color;
+    background: $color;
+    border-color: $color;
+  }
+}

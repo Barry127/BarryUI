@@ -1,0 +1,23 @@
+@import 'colors';
+@import 'layout';
+
+@mixin body () {
+  @include font;
+  font-size: 14px;
+  line-height: $line-height;
+}
+
+@mixin font () {
+  font-family: "Segoe UI WestEuropean","Segoe UI",-apple-system,BlinkMacSystemFont,Roboto,"Helvetica Neue",sans-serif;
+  line-height: $line-height;
+}
+
+@mixin disabled () {
+  opacity: .65;
+  pointer-events: none;
+  cursor: default;
+}
+
+@mixin size ($fontSize) {
+  font-size: $fontSize;
+}

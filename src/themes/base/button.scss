@@ -1,0 +1,117 @@
+@import 'config/button';
+@import 'config/colors';
+@import 'config/mixins';
+
+.buiButton {
+  display: inline-block;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  font-family: inherit;
+  font-size: 1rem;
+  line-height: 1;
+  border: 1px solid transparent;
+  cursor: pointer;
+  user-select: none;
+  transition: $btn-transition;
+  @include btn-size('medium');
+  @include btn-style($default-button-text-color, $default-button-background, $default-button-background);
+
+  &:focus {
+    outline: 0;
+    box-shadow: 0 0 0 2px rgba($primary-button-background, .5);
+  }
+
+  &:disabled {
+    @include disabled;
+    box-shadow: none;
+  }
+}
+
+.buiButton--basic {
+  @include btn-basic($default-button-background, $white);
+}
+
+.buiButton--primary {
+  @include btn-style($primary-button-text-color, $primary-button-background, $primary-button-background);
+
+  &.buiButton--basic {
+    @include btn-basic($primary-button-background, $primary-button-text-color);
+  }
+}
+
+.buiButton--secondary {
+  @include btn-style($secondary-button-text-color, $secondary-button-background, $secondary-button-background);
+
+  &.buiButton--basic {
+    @include btn-basic($secondary-button-background, $secondary-button-text-color);
+  }
+}
+
+.buiButton--state-success {
+  @include btn-style($success-button-text-color, $success-button-background, $success-button-background);
+
+  &.buiButton--basic {
+    @include btn-basic($success-button-background, $success-button-text-color);
+  }
+}
+
+.buiButton--state-warning {
+  @include btn-style($warning-button-text-color, $warning-button-background, $warning-button-background);
+
+  &.buiButton--basic {
+    @include btn-basic($warning-button-background, $warning-button-text-color);
+  }
+}
+
+.buiButton--state-danger {
+  @include btn-style($danger-button-text-color, $danger-button-background, $danger-button-background);
+
+  &.buiButton--basic {
+    @include btn-basic($danger-button-background, $danger-button-text-color);
+  }
+}
+
+.buiButton--state-info {
+  @include btn-style($info-button-text-color, $info-button-background, $info-button-background);
+
+  &.buiButton--basic {
+    @include btn-basic($info-button-background, $info-button-text-color);
+  }
+}
+
+.buiButton--state-link {
+  color: $link-text-color;
+  background: transparent;
+  border-color: transparent;
+
+  &:hover,
+  &:active,
+  &.buiButton--active {
+    color: $link-hover-text-color;
+    background: transparent;
+    text-decoration: underline;
+    border-color: transparent;
+  }
+}
+
+.buiButton--size-small {
+  @include btn-size('small');
+}
+
+.buiButton--size-medium {
+  @include btn-size('medium');
+}
+
+.buiButton--size-large {
+  @include btn-size('large');
+}
+
+.buiButton--fluid {
+  display: block;
+  width: 100%;
+}
+
+.buiButton--circular {
+  border-radius: 2em;
+}

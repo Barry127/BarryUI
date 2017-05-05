@@ -1,0 +1,42 @@
+@import 'layout';
+
+$btn-border-radius: $border-radius;
+$btn-padding-x: $padding-x;
+$btn-padding-y: $padding-y;
+$btn-padding: $padding;
+$btn-sizes: $sizes-rem;
+
+@mixin btn-size ($size) {
+  font-size: map-get($btn-sizes, $size);
+  border-radius: map-get($btn-border-radius, $size);
+  padding: map-get($btn-padding, $size);
+
+  &.buiButton--circular {
+    padding-left: map-get($btn-padding-y, $size) * 1.5;
+    padding-right: map-get($btn-padding-y, $size) * 1.5;
+    min-width: 2em;
+  }
+}
+
+@mixin btn-style ($color, $background, $hover-color, $hover-background, $active-color, $active-background) {
+  color: $color;
+  background: $background;
+  border-color: $background;
+
+  &:focus {
+    border-color: $hover-background;
+  }
+
+  &:hover {
+    color: $hover-color;
+    background: $hover-background;
+    border-color: $hover-background;
+  }
+
+  &:active,
+  &.buiButton--active {
+    color: $active-color;
+    background: $active-background;
+    border-color: $active-background;
+  }
+}

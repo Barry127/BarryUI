@@ -1,0 +1,9 @@
+$sizes-em: (small: .875em, medium: 1em, large: 1.25em);
+$sizes-rem: (small: .875rem, medium: 1rem, large: 1.25rem);
+
+$border-radius: (small: 0, medium: 0, large: 0);
+$padding-x: (small: .5rem, medium: 1rem, large: 1.25rem);
+$padding-y: (small: .125rem, medium: .25rem, large: .35rem);
+$padding: (small: map-get($padding-y, 'small') map-get($padding-x, 'small'), medium: map-get($padding-y, 'medium') map-get($padding-x, 'medium'), large: map-get($padding-y, 'large') map-get($padding-x, 'large'));
+
+$line-height: 1.5;

@@ -1,0 +1,11 @@
+@import 'colors';
+
+@mixin disabled () {
+  opacity: .65;
+  pointer-events: none;
+  cursor: default;
+}
+
+@mixin size ($fontSize) {
+  font-size: $fontSize;
+}
