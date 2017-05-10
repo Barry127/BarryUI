@@ -1,0 +1,8 @@
+@font-face {
+  font-family: 'FabricMDL2Icons';
+  src: url('#{$icon-font-path}/fabricmdl2icons-2.23.woff2') format('woff2'),
+    url('#{$icon-font-path}/fabricmdl2icons-2.23.woff') format('woff'),
+    url('#{$icon-font-path}/fabricmdl2icons-2.23.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}

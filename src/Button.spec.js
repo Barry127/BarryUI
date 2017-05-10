@@ -5,7 +5,7 @@ import { spy } from 'sinon';
 import cheerio from 'cheerio';
 import Button from './Button';
 
-describe.only('Button', () => {
+describe('Button', () => {
   it('renders without crashing', () => {
     mount(<Button>My Button</Button>);
   });
